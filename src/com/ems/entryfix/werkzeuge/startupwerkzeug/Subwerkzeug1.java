@@ -10,7 +10,7 @@ public class Subwerkzeug1 {
 	private Subwerkzeug1UI _ui;
 
 	// Services, die das Werkzeug benutzt folgen hier:
-	Subwerkzeug
+	
 
 	// Materialien, die das Werkzeug benutzt folgen hier:
 

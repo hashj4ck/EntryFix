@@ -15,6 +15,8 @@
 - Berichte
  - Ereignis-Log
 
+___ 
+
 ### Grunddaten
 - Kassierer(Benutzerverwaltung)
 - Kassen
@@ -23,6 +25,8 @@
 - Mehrwertsteuer 
 - Bezahlmethoden (Bar, Karte, Mobil)
 - Währung
+
+___
 
 ## Usecase (Admin)
 - Veranstaltung anlegen
@@ -39,6 +43,8 @@
  - Verkaufe (Karten, Art, Kasse)
  - Gesamtumsatz (nach Zeitraum)
  - Allgemein-Zutritte
+ 
+ ___ 
 
 ## Usecase (Kassierer)
 

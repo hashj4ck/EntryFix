@@ -1,28 +1,16 @@
 package com.ems.entryfix.werkzeuge.startupwerkzeug;
 
-/**
- * 
- * {Description of "StartupWerkzeug.java"}
- * <p>
- * Diese Werkzeugklasse dient zum starten des Spiels. Dient zum Verwalten der
- * Benutzereingaben von StartupWerkzeugUI
- *
- * @author Christian
- * @author Vinh
- * @version 29.07.2016
- *
- * @since 29.07.2016 , 21:18:53
- *
- */
-public class StartupWerkzeug {
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-	private StartupWerkzeugUI _ui;
+import javax.swing.JPanel;
 
-	// Subwerkzeuge, ("Widgets") die eingebunden werden können folgen hier:
-	Subwerkzeug1 werkzeug1 = new Subwerkzeug1();
-	Subwerkzeug2 werkzeug2 = new Subwerkzeug2();
+public class Subwerkzeug1 {
+
+	private Subwerkzeug1UI _ui;
 
 	// Services, die das Werkzeug benutzt folgen hier:
+	Subwerkzeug
 
 	// Materialien, die das Werkzeug benutzt folgen hier:
 
@@ -37,22 +25,10 @@ public class StartupWerkzeug {
 	 * TODO: [29.07.2016 / 21:31:30, Christian] Finish the Constructor of
 	 * "StartupWerkzeug.java"
 	 */
-	public StartupWerkzeug() {
+	public Subwerkzeug1() {
 
-		_ui = new StartupWerkzeugUI(werkzeug1.getUIPanel(), werkzeug2.getUIPanel());
-
-		// Services initialisieren
-
-		// Listener für Subwerkzeuge erstellen
-		erzeugeListenerFuerSubwerkzeuge();
-
-		// UI erstellen (mit eingebetteten UIs der direkten Subwerkzeuge)
-
-		// UI Aktionen registrieren
+		_ui = new Subwerkzeug1UI();
 		registriereUIAktionen();
-
-		// Fenster anzeigen
-		_ui.zeigeFenster();
 
 	}
 
@@ -80,6 +56,25 @@ public class StartupWerkzeug {
 	 */
 	private void registriereUIAktionen() {
 
+		_ui.get_neuerButton().addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Gedrückt");
+
+			}
+		});
+
+	}
+
+	/**
+	 * Gibt das Panel dieses Subwerkzeugs zurück. Das Panel sollte von einem
+	 * Kontextwerkzeug eingebettet werden.
+	 * 
+	 * @ensure result != null
+	 */
+	public JPanel getUIPanel() {
+		return _ui.get_panel();
 	}
 
 	/**

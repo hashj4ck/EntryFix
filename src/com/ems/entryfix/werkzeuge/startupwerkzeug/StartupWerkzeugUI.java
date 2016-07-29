@@ -2,6 +2,9 @@ package com.ems.entryfix.werkzeuge.startupwerkzeug;
 
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import javax.swing.JTextField;
 
 public class StartupWerkzeugUI {
 
@@ -10,6 +13,7 @@ public class StartupWerkzeugUI {
 
 	// Der Hauptframe, der verschiedene Subwerkzeuge hält
 	private JFrame _frame;
+	private JTextField textField;
 
 	/**
 	 * 
@@ -24,11 +28,14 @@ public class StartupWerkzeugUI {
 	 * 
 	 * @wbp.parser.entryPoint
 	 */
-	public StartupWerkzeugUI() {
+	public StartupWerkzeugUI(JPanel subwerkzeug1, JPanel subwerkzeug2) {
 
 		_frame = new JFrame();
 		_frame.setTitle(TITEL);
 		_frame.getContentPane().setLayout(new BorderLayout(0, 0));
+
+		_frame.getContentPane().add(subwerkzeug1, BorderLayout.WEST);
+		_frame.getContentPane().add(subwerkzeug2, BorderLayout.EAST);
 	}
 
 	/**

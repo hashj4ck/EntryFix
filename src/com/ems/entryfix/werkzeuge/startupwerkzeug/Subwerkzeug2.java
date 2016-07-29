@@ -1,32 +1,10 @@
 package com.ems.entryfix.werkzeuge.startupwerkzeug;
 
-/**
- * 
- * {Description of "StartupWerkzeug.java"}
- * <p>
- * Diese Werkzeugklasse dient zum starten des Spiels. Dient zum Verwalten der
- * Benutzereingaben von StartupWerkzeugUI
- *
- * @author Christian
- * @author Vinh
- * @version 29.07.2016
- *
- * @since 29.07.2016 , 21:18:53
- *
- */
-public class StartupWerkzeug {
+import javax.swing.JPanel;
 
-	private StartupWerkzeugUI _ui;
+public class Subwerkzeug2 {
 
-	// Subwerkzeuge, ("Widgets") die eingebunden werden können folgen hier:
-	Subwerkzeug1 werkzeug1 = new Subwerkzeug1();
-	Subwerkzeug2 werkzeug2 = new Subwerkzeug2();
-
-	// Services, die das Werkzeug benutzt folgen hier:
-
-	// Materialien, die das Werkzeug benutzt folgen hier:
-
-	// Fachwerte, die das Werkzeug benutzt folgen hier:
+	private Subwerkzeug2UI _ui;
 
 	/**
 	 * 
@@ -37,22 +15,9 @@ public class StartupWerkzeug {
 	 * TODO: [29.07.2016 / 21:31:30, Christian] Finish the Constructor of
 	 * "StartupWerkzeug.java"
 	 */
-	public StartupWerkzeug() {
+	public Subwerkzeug2() {
 
-		_ui = new StartupWerkzeugUI(werkzeug1.getUIPanel(), werkzeug2.getUIPanel());
-
-		// Services initialisieren
-
-		// Listener für Subwerkzeuge erstellen
-		erzeugeListenerFuerSubwerkzeuge();
-
-		// UI erstellen (mit eingebetteten UIs der direkten Subwerkzeuge)
-
-		// UI Aktionen registrieren
-		registriereUIAktionen();
-
-		// Fenster anzeigen
-		_ui.zeigeFenster();
+		_ui = new Subwerkzeug2UI();
 
 	}
 
@@ -80,6 +45,16 @@ public class StartupWerkzeug {
 	 */
 	private void registriereUIAktionen() {
 
+	}
+
+	/**
+	 * Gibt das Panel dieses Subwerkzeugs zurück. Das Panel sollte von einem
+	 * Kontextwerkzeug eingebettet werden.
+	 * 
+	 * @ensure result != null
+	 */
+	public JPanel getUIPanel() {
+		return _ui.get_panel();
 	}
 
 	/**

@@ -1,6 +1,6 @@
-package com.game.zombielab.startup;
+package com.ems.entryfix.startup;
 
-import com.game.zombielab.werkzeuge.startupwerkzeug.StartupWerkzeug;
+import com.ems.entryfix.werkzeuge.startupwerkzeug.StartupWerkzeug;
 
 public class main {
 

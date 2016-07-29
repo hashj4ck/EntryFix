@@ -1,4 +1,4 @@
-package com.game.zombielab.werkzeuge.observer;
+package com.ems.entryfix.werkzeuge.observer;
 
 /**
  * Interface für Kontextwerkzeuge, die Subwerkzeuge beobachten möchten.

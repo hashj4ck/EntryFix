@@ -16,7 +16,7 @@ package com.game.zombielab.werkzeuge.startupwerkzeug;
  */
 public class StartupWerkzeug {
 
-	private StartupWerkzeug _ui;
+	private StartupWerkzeugUI _ui;
 
 	// Subwerkzeuge, ("Widgets") die eingebunden werden können folgen hier:
 
@@ -36,6 +36,8 @@ public class StartupWerkzeug {
 	 * "StartupWerkzeug.java"
 	 */
 	public StartupWerkzeug() {
+
+		_ui = new StartupWerkzeugUI();
 
 		// Services initialisieren
 

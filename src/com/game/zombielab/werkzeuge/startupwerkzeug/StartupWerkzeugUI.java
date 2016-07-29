@@ -6,7 +6,7 @@ import java.awt.BorderLayout;
 public class StartupWerkzeugUI {
 
 	// Titel des Frames:
-	private static final String TITEL = "Ehemaligen Verwaltung";
+	private static final String TITEL = "ZombieLab - Whoop!";
 
 	// Der Hauptframe, der verschiedene Subwerkzeuge hält
 	private JFrame _frame;
@@ -26,7 +26,8 @@ public class StartupWerkzeugUI {
 	 */
 	public StartupWerkzeugUI() {
 
-		JFrame _frame = new JFrame();
+		_frame = new JFrame();
+		_frame.setTitle(TITEL);
 		_frame.getContentPane().setLayout(new BorderLayout(0, 0));
 	}
 

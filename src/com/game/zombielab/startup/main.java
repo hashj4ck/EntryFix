@@ -1,3 +1,4 @@
+package com.game.zombielab.startup;
 
 public class main {
 

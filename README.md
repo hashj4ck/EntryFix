@@ -24,10 +24,6 @@
 - Bezahlmethoden (Bar, Karte, Mobil)
 - Währung
 
-
-### Tabs
--  
-
 ## Usecase (Admin)
 - Veranstaltung anlegen
  - Events anlegen

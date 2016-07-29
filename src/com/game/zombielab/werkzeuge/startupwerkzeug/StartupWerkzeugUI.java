@@ -1,6 +1,7 @@
 package com.game.zombielab.werkzeuge.startupwerkzeug;
 
 import javax.swing.JFrame;
+import java.awt.BorderLayout;
 
 public class StartupWerkzeugUI {
 
@@ -20,16 +21,20 @@ public class StartupWerkzeugUI {
 	 * 
 	 * TODO: [29.07.2016 / 21:36:12, Christian] Finish the Constructor of
 	 * "StartupWerkzeugUI.java"
+	 * 
+	 * @wbp.parser.entryPoint
 	 */
 	public StartupWerkzeugUI() {
 
+		JFrame _frame = new JFrame();
+		_frame.getContentPane().setLayout(new BorderLayout(0, 0));
 	}
 
 	/**
 	 * Zeigt das Fenster an
 	 */
 	void zeigeFenster() {
-		// _frame.setSize(525, 335); Musst du anpassen je nach Fenstergröße!
+		_frame.setSize(525, 335);
 		_frame.setVisible(true);
 	}
 
@@ -40,3 +45,5 @@ public class StartupWerkzeugUI {
 		_frame.setVisible(false);
 		_frame.dispose();
 	}
+
+}

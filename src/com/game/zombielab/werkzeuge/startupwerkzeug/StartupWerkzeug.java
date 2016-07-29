@@ -1,7 +1,5 @@
 package com.game.zombielab.werkzeuge.startupwerkzeug;
 
-import de.hawhh.informatik.cb.datenbank.werkzeuge.observer.SubwerkzeugObserver;
-
 /**
  * 
  * {Description of "StartupWerkzeug.java"}

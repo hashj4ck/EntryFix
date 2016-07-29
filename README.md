@@ -2,7 +2,7 @@
 
 ___ 
 
-## Features
+## Gliederung der GUI
 
 ### Dropdown
 - Applikation

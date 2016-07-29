@@ -28,12 +28,35 @@
 ### Tabs
 -  
 
-## Usecase
+## Usecase (Admin)
 - Veranstaltung anlegen
  - Events anlegen
+  - Anmeldung? (Ja, Nein)
   - kassierer zuordnen
   - Artikel einrichten
    - Packages
   - Verkäufskanäle
   - Eingänge zuordnen 
   - Tastaturlayouts der Kassierer
+
+- Berichte anzeigen
+ - Verkaufe (Karten, Art, Kasse)
+ - Gesamtumsatz (nach Zeitraum)
+ - Allgemein-Zutritte
+
+## Usecase (Kassierer)
+
+Alle folgenden Zugänge ist ein Login erforderlich
+
+- Tickets verkaufen vorort  
+ - Ticketart auswählen ggf. Package auswählen 
+ - Gutscheincode eingeben/scannen 
+ - angebotene Bezahlart wählen 
+ - Beleg drucken
+ - Einlass 
+
+- Tickets verkaufen (bereits gekauft)
+ - Barcode validieren 
+ - Benutzer verifizieren (Personamen abgleich)
+ - Einlass 
+

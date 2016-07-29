@@ -28,3 +28,12 @@
 ### Tabs
 -  
 
+## Usecase
+- Veranstaltung anlegen
+ - Events anlegen
+  - kassierer zuordnen
+  - Artikel einrichten
+   - Packages
+  - Verkäufskanäle
+  - Eingänge zuordnen 
+  - Tastaturlayouts der Kassierer

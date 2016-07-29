@@ -63,3 +63,10 @@ Alle folgenden Zugänge ist ein Login erforderlich
  - Benutzer verifizieren (Personamen abgleich)
  - Einlass 
 
+
+___ 
+
+# Prozessdokumentation
+
+## Milestone A
+GUI ohne Funktionalität fertigstellen
